@@ -17,28 +17,47 @@ class Resume extends Component {
 
           <div className="section-b">
             <div>
-              <h4>Description</h4>
+              <h4 className="blue">Description</h4>
               <p className="user-description">
                 {this.props.displayDescription}
               </p>
             </div>
 
             <div>
-              <h4>Education</h4>
-              <p className="user-education">{this.props.displayUniversity}</p>
-              <p>Degree: {this.props.displayDegree}</p>
-              <p>{this.props.displayUniCity}</p>
-              <p>Discipline: {this.props.displayDiscipline}</p>
-              <p>
-                {this.props.displayUniFrom} - {this.props.displayUniTo}
-              </p>
+              <h4 className="blue">Education</h4>
+              <div className="experience">
+                <div>
+                  <p className="work-date">
+                    <b>
+                      {" "}
+                      {this.props.displayUniFrom} - {this.props.displayUniTo}
+                    </b>
+                  </p>
+                </div>
+
+                <div className="info">
+                  <p className="user-education">
+                    <b>
+                      {" "}
+                      {this.props.displayUniversity},{" "}
+                      {this.props.displayUniCity}
+                    </b>
+                  </p>
+                  <p>
+                    Degree:<i> {this.props.displayDegree}</i>
+                  </p>
+                  <p>
+                    Discipline:<i> {this.props.displayDiscipline}</i>
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div>
-              <h4>Experience</h4>
+              <h4 className="blue">Experience</h4>
               <div className="experience">
                 <div>
-                  <p>
+                  <p className="work-date">
                     <b>
                       {" "}
                       {this.props.displayFrom} - {this.props.displayTo}
@@ -46,7 +65,7 @@ class Resume extends Component {
                   </p>
                 </div>
 
-                <div>
+                <div className="info">
                   <p>
                     <b>{this.props.displayPosition}</b>
                   </p>
@@ -62,7 +81,7 @@ class Resume extends Component {
 
               <div className="experience">
                 <div>
-                  <p>
+                  <p className="work-date">
                     <b>
                       {" "}
                       {this.props.displayFrom2} - {this.props.displayTo2}
@@ -70,10 +89,10 @@ class Resume extends Component {
                   </p>
                 </div>
 
-                <div>
+                <div className="info">
                   <div>
-                    <p className="user-experience">
-                      {this.props.displayPosition2}
+                    <p>
+                      <b> {this.props.displayPosition2}</b>
                     </p>
                   </div>
 
@@ -93,20 +112,20 @@ class Resume extends Component {
               <img src={this.props.test} alt="" />
             </div>
 
-            <h3>Personal details</h3>
+            <h3 className="blue">Personal details</h3>
 
             <div>
-              <h4>Address</h4>
+              <h4 className="blue">Address</h4>
               <p>{this.props.displayAddress}</p>
             </div>
 
             <div>
-              <h4>Phone number</h4>
+              <h4 className="blue">Phone number</h4>
               <p>{this.props.displayNumber}</p>
             </div>
 
             <div>
-              <h4>Email</h4>
+              <h4 className="blue">Email</h4>
               <p>{this.props.displayEmail}</p>
             </div>
           </div>

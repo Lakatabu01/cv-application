@@ -49,16 +49,25 @@
 }
 .experience{
   display: flex;
-  border: 2px solid red;
 }
-.experience > div{
-  padding-right: 15px;
-}
+
 .post{
   display: flex;
   margin-top: 10px;
-  border: 2px solid blue;
 }
 .post > p {
   padding-right: 5px;
+}
+.info{
+  padding-left: 30px;
+}
+.work-date{
+  width: 120px;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+.blue{
+  color: #164e63;
 }
