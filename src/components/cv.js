@@ -17,14 +17,14 @@ class Resume extends Component {
 
           <div className="section-b">
             <div>
-              <h4 className="blue">Description</h4>
+              <h4 className="blue  change-font">Description</h4>
               <p className="user-description">
                 {this.props.displayDescription}
               </p>
             </div>
 
             <div>
-              <h4 className="blue">Education</h4>
+              <h4 className="blue  change-font">Education</h4>
               <div className="experience">
                 <div>
                   <p className="work-date">
@@ -43,9 +43,7 @@ class Resume extends Component {
                       {this.props.displayUniCity}
                     </b>
                   </p>
-                  <p>
-                    Degree:<i> {this.props.displayDegree}</i>
-                  </p>
+                  <p>Degree: {this.props.displayDegree}</p>
                   <p>
                     Discipline:<i> {this.props.displayDiscipline}</i>
                   </p>
@@ -54,7 +52,7 @@ class Resume extends Component {
             </div>
 
             <div>
-              <h4 className="blue">Experience</h4>
+              <h4 className="blue  change-font">Experience</h4>
               <div className="experience">
                 <div>
                   <p className="work-date">
@@ -112,20 +110,20 @@ class Resume extends Component {
               <img src={this.props.test} alt="" />
             </div>
 
-            <h3 className="blue">Personal details</h3>
+            <h3 className="blue  change-font">Personal details</h3>
 
             <div>
-              <h4 className="blue">Address</h4>
+              <h4 className="blue  change-font">Address</h4>
               <p>{this.props.displayAddress}</p>
             </div>
 
             <div>
-              <h4 className="blue">Phone number</h4>
+              <h4 className="blue  change-font">Phone number</h4>
               <p>{this.props.displayNumber}</p>
             </div>
 
             <div>
-              <h4 className="blue">Email</h4>
+              <h4 className="blue change-font">Email</h4>
               <p>{this.props.displayEmail}</p>
             </div>
           </div>

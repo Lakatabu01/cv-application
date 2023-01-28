@@ -118,7 +118,6 @@ class App extends Component {
                 onChange={this.handleChange}
                 placeholder="Photo URL"
                 accept="image/*"
-                value={this.state.imageLink}
               />
             </div>
 

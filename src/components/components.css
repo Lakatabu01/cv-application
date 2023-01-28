@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "MyFont";
+  src:
+  url(../../public/Poppins-Thin.ttf);
+}
 .header{
   text-align: center; 
   background-color: black;
@@ -70,4 +75,7 @@ img{
 }
 .blue{
   color: #164e63;
+}
+.change-font{
+  font-family: "MyFont";
 }
